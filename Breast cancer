@@ -1,3 +1,4 @@
+#Installing the required packages
 install.packages("tidyverse")
 install.packages("caret")
 install.packages("ggcorrplot")
@@ -18,6 +19,7 @@ library(ROCR)
 library(pROC)
 library(RCurl)
 library(rmarkdown)
+#Simple code to obtain data by using the RCurl package installed previously.
 UCI_data_URL = getURL('https://archive.ics.uci.edu/ml/machine-learning-databases/breast-cancer-wisconsin/wdbc.data')
 names = c('id_number', 'diagnosis', 'radius_mean', 
            'texture_mean', 'perimeter_mean', 'area_mean', 
